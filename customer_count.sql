@@ -1,0 +1,1 @@
+SELECT b.name, COUNT(*) AS customer_count FROM loanoptions.customers c INNER JOIN loanoptions.brokers b ON c.broker_id = b.id GROUP BY b.name;
